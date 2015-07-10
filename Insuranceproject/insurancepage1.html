@@ -1,0 +1,61 @@
+<div style="height:650px;"ng-controller="actsctrl1" class="container-fluid" >
+<div style="background-color:white;margin-left:80px;padding-left:20px;margin-right:80px;">
+<br>
+<h2 style=" background-color: lightgreen;color: white;font-size: 20px;height:40px;margin-left:-40px;width: 1130px;margin-top: -10px;"> Customer Information</h2>
+<p> We need to ask you for some personal information to provide you with an</p><p> accurate quote. This information is kept private and secure, will not be sold</p><br>
+<form name="myName" novalidate>
+
+First Name: &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="text" ng-model="fnaming" name="fname"required /><span style="color:red" ng-show="myName.fname.$error.required">This field is required</span><direct1 style="display:inline"ng-click="popup1()"></direct1><span ng-show=var11> Enter the firstname</span>
+
+
+<br><br>Last Name: &nbsp; &nbsp; &nbsp; &nbsp; 
+<input type="text" name="lname" ng-model="lname" required/><span style="color:red" ng-show="myName.lname.$error.required">This field is required</span><direct1 style="display:inline"ng-click="popup2()"></direct1><span ng-show=var12> Enter the last name</span>
+
+<br><br>Address:  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="fname31" ng-model="fname31" required/><span style="color:red" ng-show="myName.fname31.$error.required">This field is required</span><direct1 style="display:inline"ng-click="popup3()"></direct1><span ng-show=var13> Enter the address </span>
+
+<br><br>Zip Code: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+<input type="text" name="fname32" ng-model="fname32" required/><span style="color:red" ng-show="myName.fname32.$error.required">This field is required</span><direct1 style="display:inline"ng-click="popup4()"></direct1><span ng-show=var14> Enter the zipcode </span>
+
+<br><br>Date of Birth:  &nbsp; &nbsp; 
+<input type="text" name="fname4" ng-model="fname4" style="width:30px;" required/><span style="color:red" ng-show="myName.fname6.$error.required">This field is required</span>/
+<input type="text" name="fname5" ng-model="fname5"style="width:30px;" required/><span style="color:red" ng-show="myName.fname6.$error.required">This field is required</span>/
+<input type="text" name="fname6" ng-model="fname6"style="width:60px;" required/><span style="color:red" ng-show="myName.fname6.$error.required">This field is required</span><direct1 style="display:inline"ng-click="popup5()"></direct1><span ng-show=var15> Enter the date of birth</span>
+
+<br><br>
+<b> Select 'Yes'  if any of the following apply to you: </b><br>
+<br>
+
+&nbsp;&gt; I need to insure more than one driver
+<br>
+<br>
+
+&nbsp;&gt; I need to insure more than one vehicle
+
+<input style="position:relative; margin-left:100px ;margin-top:10px;" type="radio" name ="radio1" value="yes"> Yes
+<input style="position:relative; margin-left:20px;" type="radio" name="radio1" value="no"> No
+<br>
+<br>
+
+&nbsp;&gt; I am married
+
+<br>
+
+
+
+
+<br><br>
+
+<a href="#/continue1">
+<input style=" font-size: 15px;width:100px;" ng-click="sub1()" type="submit" class="btn btn-primary" ng-disabled="myName.fname.$invalid||myName.lname.$invalid || myName.fname31.$invalid || myName.fname32.$invalid || myName.fname4.$invalid || myName.fname5.$invalid || myName.fname6.$invalid" value=" Continue">
+</a>
+</form>
+<br><br>
+</div>
+
+<direct style="height:0px;left: 748px;position: relative;top: -500px;"></direct>
+
+</div>
+
+

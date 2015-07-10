@@ -1,0 +1,86 @@
+
+<div class="container-fluid" ng-controller="actsctrl2">
+<div style="background-color:white;margin-left:80px;padding-left:20px;margin-bottom:90px;margin-right:80px;">
+<!--  <p>Quote for : {{ fname }}</p>-->
+<h2 style="background-color: lightgreen; color: white;font-size: 20px;height: 40px;margin-left: -40px;margin-top: 10px;width: 1130px;">Add Vehicle Information:</h2><br>
+<br>
+<form name="fnamee" novalidate>
+Year:
+<select name="selecting" ng-model="year" >
+<option value="2011" selected>2011</option>
+<option value="2012">2012</option>
+<option value="2011">2013</option>
+<option value="2012">2014</option>
+<option value="2011">2015</option>
+<option value="2012">2016</option>
+<option value="2011">2017</option>
+<option value="2012">2018</option>
+<option value="2011">2019</option>
+<option value="2012">2020</option>
+<option value="2011">2021</option>
+<option value="2012">2022</option>
+<option value="2011">2023</option>
+<option value="2012">2024</option>
+
+</select><span style="color:red" ng-show="fnamee.selecting.$error.required">This field is required</span><direct1 style="display:inline" ng-click="popshow()"></direct1><span ng-show="var21"> Enter the year</span><br><br>
+
+
+Make:
+<select name="make" ng-model="make" required>
+<option value="Choose an option" selected> Choose an option </option>
+<option value="Honda"> Honda</option>
+<option value="Santro"> Santro</option>
+<option value="Ford"> Ford</option>
+</select><span style="color:red" ng-show="fnamee.make.$error.required">This field is required</span><direct1 style="display:inline" ng-click="popshow1()"></direct1><span ng-show="var22"> Enter the make</span><br><br>
+Model:
+<select ng-model="model" required>
+<option value="Choose an option"selected>Choose</option>
+<option value="MDX" > MDX</option>
+<option value="RDX"> RDX</option>
+<option value="TLX"> TLX</option>
+<option value="TL">TL</option>
+</select><span style="color:red" ng-show="fnamee.model.$error.required">This field is required</span><direct1 style="display:inline" ng-click="popshow2()"></direct1><span ng-show="var23"> Enter the make</span>
+<br><br>
+Is this vehicle owned,financed, leased? 
+<input type="radio" value=" owned" ng-model="t1"name="t1">Owned
+<input type="radio" value="financed"ng-model="t2" name="t2"> Financed
+<input type="radio" value="leased" ng-model="t3" name="t3"> Leased
+
+<direct1 style="display:inline" ng-click="popshow3()"></direct1><span ng-show="var33"> Enter the vehicle ownership</span>
+<br><br>
+Primary use of vehicle: 
+<select  name="prime"ng-model="primary" required>
+<option value="Choose use of vehicle" selected> Choose use of vehicle</option>
+<option value="Commute" > Commute</option>
+<option value="Pleasure"> Pleasure</option>
+<option value="Business"> Business</option>
+
+</select><span style="color:red" ng-show="fnamee.prime.$error.required">This field is required</span><direct1 style="display:inline" ng-click="popshow4()"></direct1><span ng-show="var43"> Enter the vehicle ownership</span>
+<br><br>
+Estimated Annual Coverage(in miles):<select name="cover" ng-model="coverage" required>
+<option value="1000" selected> Uptil 1000</option>
+<option value="2000"> 1000-2000</option>
+<option value="3000"> 2000-3000</option>
+<option value="4000"> 3000-4000</option>
+<option value="5000"> 4000-5000</option>
+<option value="6000"> 5000-6000</option>
+<option value="10000"> 6000-10000</option>
+<option value="above"> Above 10000</option>
+
+</select><span style="color:red" ng-show="fnamee.cover.$error.required">This field is required</span><direct1 style="display:inline" ng-click="popshow5()"></direct1><span ng-show="var53"> Enter the annual coverage</span>
+<br><br>
+Do you have any other vehicle? 
+<input type="radio" name="t3" value="yes" ng-model="ra1"> Yes
+<input type="radio" name="t3" value="no" ng-model="ra2"> No
+
+<br><br><br>&nbsp;&nbsp;
+<a href="#/continue2">
+<input type="submit" name="t2" class="btn btn-primary" ng-click="sub2()" ng-disabled="fnamee.selecting.$invalid" value="Continue"> 
+</a>
+</form>
+<br>
+<br>
+</div>
+<direct style="height:0px;left: 748px;position: relative;top: -370px;">
+	</direct>
+</div>
