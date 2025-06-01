@@ -1,74 +1,189 @@
 <div class="container-fluid" ng-controller="actsctrl3">
-<div style="background-color:white;margin-left:80px;padding-left:20px;margin-right:80px;">
-<h2 style="background-color: lightgreen;color: white;font-size: 20px;height: 40px;margin-left: -40px;margin-top: 11px;width: 1130px;"> Some other information</h2>
-<form name="fne" novalidate>
-<table style="width:50%">
-<tr><td>
-Marital Status:</td><td> <select ng-model="m1" name="marital" required>
-<option name=" single" selected> Single </option>
-<option name="married"> Married</option>
-<option name="divorced"> Divorced</option>
-<option name="widowed"> Widowed</option>
-
-
-</select><span style="color:red" ng-show="fne.marital.$error.required">This field is required</span><direct1 style="display:inline"></direct1></td></tr>
-<br><br><tr><td>
-Gender: </td><td><input type="radio" name="t1" value="Male" ng-model="m2"> Male
-<input type="radio" name="t1" value="Female" ng-model="m3"> Female<direct1 style="display:inline"></direct1>
-<br><br></td></tr>
-<tr><td>
-Social Security Number:</td><td>
-<input style="width:50px;" class="A1" type="password" value="000" name="t2">- <input style="width:50px;" type="password" value="000"name="t3" class="A1" >-<input style="width:80px;" type="number" value="0000" class="A1"  name="t4">
-<span style="color:red" ng-show="fne.t2.$error.required && fne.t3.$error.required && fne.t4.$error.required">This field is required</span><direct1 style="display:inline"></direct1>
-
-</td></tr><tr><td><br><br>Do you currently have autoinsurance?</td><td>
-<select ng-model="m4" name ="mi2" required>
-<option value="Yes, I have autoinsurance" selected> Yes, I have autoinsurance</option>
-<option value=" I am on my parent's insurance policy"> I am on my parent's insurance policy</option>
-<option value="No, I have not needed insurance"> No, I have not needed insurance</option>
-<option value="No, my insurance ran out"> No, my insurance ran out</option>
-</select><span style="color:red" ng-show="fne.mi2.$error.required">This field is required</span>
-</td></tr>
-<br><br><tr><td>
-How old were you when you got your driving licence in US/Canada?</td><td>
-<input type="number" name="s1" value="0" ng-model="m5" required><span style="color:red" ng-show="fne.s1.$error.required">This field is required</span> <direct1 style="display:inline"></direct1>
-</td></tr>
-<tr><td> Full time student</td>
-<td><input type="radio" name="y1"ng-model="m6" value="No"> No
-<input type="radio" name="y2" ng-model="m7" value="Yes"> Yes <direct1 style="display:inline"></direct1></td>
-</tr>
-<tr><td> Highest education level completed</td><td>
-<select ng-model="m8" name="m8"required>
-<option value="Less than High School " selected> Less than High school</option> 
-<option value="Vocational "> Vocational</option> 
-<option value="High School ">  High school</option> 
-<option value="Associate "> Associate </option> 
-<option value="Associate pursing bachelor's degree">Associate pursuing bachelor's degree</option> 
-<option value="Bachelors "> Bachelors</option> 
-<option value="Bachelor's pursuing Graduate degree "> Bachelor's pursuing Graduate degree</option> 
-<option value="Master's "> Master's</option> 
-<option value="Doctors"> Doctors</option> 
-<option value="Others"> Others</option>
-</select><span style="color:red" ng-show="fne.m8.$error.required">This field is required</span>
-</td></tr>
-
-
-<tr><td><br>Type of Employment(state government, military etc.)</td>
-<td> <input type="text" name="t1" value="Enter" ng-model="m9" required><span style="color:red" ng-show="fne.t1.$error.required">This field is required</span><direct1 style="display:inline"></direct1>
-</td></tr>
-</table>
-<p>In connection with this insurance rate quote and any renewal of insurance, we may obtain or use a </p><p>
-<a href=" " >credit-based insurance score </a>based on the information contained in your credit report. We may use a</p>
- <p>third party in connection with the development of your insurance score.</p> 
- 
-
-
- <a href="#/continue3">
- <input type="submit" ng-click="sub3()" value="Continue" class="btn btn-primary">
- </a>
- </form>
- <br><br>
- </div>
- <direct style="height:0px;left: 748px;position: relative;top: -450px;">
-	</direct>
-<br><br></div>
+  <div
+    style="
+      background-color: white;
+      margin-left: 80px;
+      padding-left: 20px;
+      margin-right: 80px;
+    "
+  >
+    <h2
+      style="
+        background-color: lightgreen;
+        color: white;
+        font-size: 20px;
+        height: 40px;
+        margin-left: -40px;
+        margin-top: 11px;
+        width: 1130px;
+      "
+    >
+      Some other information
+    </h2>
+    <form name="fne" novalidate>
+      <table style="width: 50%">
+        <tr>
+          <td>Marital Status:</td>
+          <td>
+            <select ng-model="m1" name="marital" required>
+              <option name=" single" selected>Single</option>
+              <option name="married">Married</option>
+              <option name="divorced">Divorced</option>
+              <option name="widowed">Widowed</option></select
+            ><span style="color: red" ng-show="fne.marital.$error.required"
+              >This field is required</span
+            ><direct1 style="display: inline"></direct1>
+          </td>
+        </tr>
+        <br /><br />
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="t1" value="Male" ng-model="m2" /> Male
+            <input type="radio" name="t1" value="Female" ng-model="m3" />
+            Female<direct1 style="display: inline"></direct1> <br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>Social Security Number:</td>
+          <td>
+            <input
+              style="width: 50px"
+              class="A1"
+              type="password"
+              value="000"
+              name="t2"
+            />-
+            <input
+              style="width: 50px"
+              type="password"
+              value="000"
+              name="t3"
+              class="A1"
+            />-<input
+              style="width: 80px"
+              type="number"
+              value="0000"
+              class="A1"
+              name="t4"
+            />
+            <span
+              style="color: red"
+              ng-show="fne.t2.$error.required && fne.t3.$error.required && fne.t4.$error.required"
+              >This field is required</span
+            ><direct1 style="display: inline"></direct1>
+          </td>
+        </tr>
+        <tr>
+          <td><br /><br />Do you currently have autoinsurance?</td>
+          <td>
+            <select ng-model="m4" name="mi2" required>
+              <option value="Yes, I have autoinsurance" selected>
+                Yes, I have autoinsurance
+              </option>
+              <option value=" I am on my parent's insurance policy">
+                I am on my parent's insurance policy
+              </option>
+              <option value="No, I have not needed insurance">
+                No, I have not needed insurance
+              </option>
+              <option value="No, my insurance ran out">
+                No, my insurance ran out
+              </option></select
+            ><span style="color: red" ng-show="fne.mi2.$error.required"
+              >This field is required</span
+            >
+          </td>
+        </tr>
+        <br /><br />
+        <tr>
+          <td>
+            How old were you when you got your driving licence in US/Canada?
+          </td>
+          <td>
+            <input
+              type="number"
+              name="s1"
+              value="0"
+              ng-model="m5"
+              required
+            /><span style="color: red" ng-show="fne.s1.$error.required"
+              >This field is required</span
+            >
+            <direct1 style="display: inline"></direct1>
+          </td>
+        </tr>
+        <tr>
+          <td>Full time student</td>
+          <td>
+            <input type="radio" name="y1" ng-model="m6" value="No" /> No
+            <input type="radio" name="y2" ng-model="m7" value="Yes" /> Yes
+            <direct1 style="display: inline"></direct1>
+          </td>
+        </tr>
+        <tr>
+          <td>Highest education level completed</td>
+          <td>
+            <select ng-model="m8" name="m8" required>
+              <option value="Less than High School " selected>
+                Less than High school
+              </option>
+              <option value="Vocational ">Vocational</option>
+              <option value="High School ">High school</option>
+              <option value="Associate ">Associate</option>
+              <option value="Associate pursing bachelor's degree">
+                Associate pursuing bachelor's degree
+              </option>
+              <option value="Bachelors ">Bachelors</option>
+              <option value="Bachelor's pursuing Graduate degree ">
+                Bachelor's pursuing Graduate degree
+              </option>
+              <option value="Master's ">Master's</option>
+              <option value="Doctors">Doctors</option>
+              <option value="Others">Others</option></select
+            ><span style="color: red" ng-show="fne.m8.$error.required"
+              >This field is required</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><br />Type of Employment(state government, military etc.)</td>
+          <td>
+            <input
+              type="text"
+              name="t1"
+              value="Enter"
+              ng-model="m9"
+              required
+            /><span style="color: red" ng-show="fne.t1.$error.required"
+              >This field is required</span
+            ><direct1 style="display: inline"></direct1>
+          </td>
+        </tr>
+      </table>
+      <p>
+        In connection with this insurance rate quote and any renewal of
+        insurance, we may obtain or use a
+      </p>
+      <p>
+        <a href=" ">credit-based insurance score </a>based on the information
+        contained in your credit report. We may use a
+      </p>
+      <p>
+        third party in connection with the development of your insurance score.
+      </p>
+      <a href="#/continue3">
+        <input
+          type="submit"
+          ng-click="sub3()"
+          value="Continue"
+          class="btn btn-primary"
+        />
+      </a>
+    </form>
+    <br /><br />
+  </div>
+  <direct style="height: 0px; left: 748px; position: relative; top: -450px">
+  </direct>
+  <br /><br />
+</div>
